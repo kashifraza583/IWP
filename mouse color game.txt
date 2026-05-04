@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mouse Events</title>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+    $("#link").mouseover(function(){
+        $("body").css("background","green");
+        $(this).text("I'm green now");
+    });
+
+    $("#link").mouseout(function(){
+        $("body").css("background","red");
+        $(this).text("I'm red now");
+    });
+
+});
+</script>
+
+</head>
+
+<body>
+
+<a href="https://www.dsc.du.ac.in/" id="link">
+It shows the mouse events
+</a>
+
+</body>
+</html>

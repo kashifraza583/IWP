@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Selectors</title>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+    $("#b1").click(function(){
+        $("#id1").css("color","blue");       // ID
+        $(".c1").css("color","green");       // class
+        $("input[name='n1']").val("Hello");  // name
+        $("p[title]").css("color","red");    // attribute
+    });
+
+});
+</script>
+
+</head>
+
+<body>
+
+<p id="id1">ID text</p>
+<p class="c1">Class text</p>
+<input type="text" name="n1"><br><br>
+<p title="test">Attribute text</p>
+
+<button id="b1">Apply</button>
+
+</body>
+</html>

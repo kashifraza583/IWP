@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Change Text</title>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+    $("#btn").click(function(){
+        $("#text").css("color","red");
+        $("#text").text("Text Changed!");
+    });
+
+});
+</script>
+
+</head>
+
+<body>
+
+<p id="text">Hello World</p>
+<button id="btn">Click Me</button>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Events</title>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+    $("#txt").focus(function(){
+        $(this).css("background","yellow");
+    });
+
+    $("#txt").blur(function(){
+        $(this).css("background","white");
+    });
+
+    $("#txt").change(function(){
+        alert("Changed!");
+    });
+
+    $("#btn").click(function(){
+        alert("Clicked!");
+    });
+
+    $("#btn").dblclick(function(){
+        alert("Double Clicked!");
+    });
+
+    $("#form").submit(function(){
+        alert("Form Submitted");
+    });
+
+});
+</script>
+
+</head>
+
+<body>
+
+<form id="form">
+<input type="text" id="txt">
+<button type="submit">Submit</button>
+</form>
+
+<button id="btn">Click Me</button>
+
+</body>
+</html>
