@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Department</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+        }
+
+        li {
+            display: inline-block;
+            position: relative;
+        }
+
+        li a {
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #555;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #eee;
+            min-width: 120px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            display: block;
+            padding: 8px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ccc;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* simple content */
+        #main {
+            padding: 20px;
+        }
+
+        .title {
+            color: darkblue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+
+        <li class="dropdown">
+            <a href="#">Faculty</a>
+            <div class="dropdown-content">
+                <a href="#">Prof A</a>
+                <a href="#">Prof B</a>
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a href="#">Courses</a>
+            <div class="dropdown-content">
+                <a href="#">BSc</a>
+                <a href="#">MSc</a>
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a href="#">Activities</a>
+            <div class="dropdown-content">
+                <a href="#">Seminars</a>
+                <a href="#">Trips</a>
+            </div>
+        </li>
+    </ul>
+
+    <div id="main">
+        <h1 class="title">Welcome to My Department</h1>
+        <p>This is a simple webpage for department info.</p>
+    </div>
+
+</body>
+</html>
