@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Form</title>
+
+<script>
+
+function validateForm()
+{
+    if(!validateRoll()) return false;
+    if(!validateName()) return false;
+    if(!validateDOB()) return false;
+
+    alert("Form submitted");
+    return true;
+}
+
+function validateRoll()
+{
+    var roll = document.getElementById("roll").value;
+
+    if(roll.length != 7 || isNaN(roll))
+    {
+        alert("Roll number must be 7 digit numeric");
+        return false;
+    }
+    return true;
+}
+
+function validateName()
+{
+    var name = document.getElementById("name").value;
+
+    if(name == "")
+    {
+        alert("Name cannot be empty");
+        return false;
+    }
+
+    for(var i=0; i<name.length; i++)
+    {
+        if(!(name[i] >= 'A' && name[i] <= 'Z') && !(name[i] >= 'a' && name[i] <= 'z') && name[i] != ' ')
+        {
+            alert("Name must contain only letters");
+            return false;
+        }
+    }
+    return true;
+}
+
+function validateDOB()
+{
+    var dob = document.getElementById("dob").value;
+
+    if(dob == "")
+    {
+        alert("DOB cannot be empty");
+        return false;
+    }
+    return true;
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form onsubmit="return validateForm()">
+
+Roll Number:
+<input type="text" id="roll"><br><br>
+
+Name:
+<input type="text" id="name"><br><br>
+
+DOB:
+<input type="date" id="dob"><br><br>
+
+Address:<br>
+<textarea></textarea><br><br>
+
+Course:
+<select>
+<option>--Select--</option>
+<option>B.A</option>
+<option>B.Com</option>
+<option>B.Sc</option>  
+</select>
+<br><br>
+
+Gender:
+<input type="radio" name="g"> Male
+<input type="radio" name="g"> Female
+<br><br>
+
+Subjects:
+<input type="checkbox"> HTML
+<input type="checkbox"> CSS
+<input type="checkbox"> JS
+<br><br>
+
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
