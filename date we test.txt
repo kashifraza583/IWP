@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weekend Check</title>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+    $("#check").click(function(){
+        var d = new Date($("#date").val());
+        var day = d.getDay();
+
+        if(day == 0 || day == 6)
+            alert("Weekend");
+        else
+            alert("Weekday");
+    });
+
+});
+</script>
+
+</head>
+
+<body>
+
+<input type="date" id="date">
+<button id="check">Check</button>
+
+</body>
+</html>

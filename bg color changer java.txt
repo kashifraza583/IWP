@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Focus Color</title>
+
+<script>
+
+function changeColor(x)
+{
+    x.style.backgroundColor = "yellow";
+}
+
+function backColor(x)
+{
+    x.style.backgroundColor = "white";
+}
+
+</script>
+
+</head>
+
+<body>
+
+Enter Name:
+<input type="text" onfocus="changeColor(this)" onblur="backColor(this)">
+
+<br><br>
+
+Enter City:
+<input type="text" onfocus="changeColor(this)" onblur="backColor(this)">
+
+</body>
+</html>
