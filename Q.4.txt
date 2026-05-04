@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Links</title>
+</head>
+
+<body>
+
+<h2>External Link</h2>
+<a href="https://www.google.com">Go to Google</a>
+
+<h2>Internal Link</h2>
+<a href="#section2">Go to Section 2</a>
+
+<br><br><br><br><br><br>
+
+<h3 id="section2">This is Section 2</h3>
+<p>You jumped here using internal link.</p>
+
+</body>
+</html>

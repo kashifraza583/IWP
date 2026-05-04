@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Website</title>
+</head>
+
+<body bgcolor="lightblue">
+
+<h1>Heading</h1>
+<h3>smaller heading</h3>
+
+<p><b>bold</b></p>
+<p><i>italic</i></p>
+<p><u>underlined</u></p>
+
+<p><font color="red" size="5">Red text</font></p>
+
+<p>This is a paragraph.<br>
+next line.</p>
+
+<hr>
+
+<marquee>Hello World</marquee>
+
+</body>
+</html>

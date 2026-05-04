@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Form</title>
+</head>
+
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form onsubmit="alert('Form submitted')">
+
+Name: <input type="text"><br><br>
+
+Address:<br>
+<textarea rows="4" cols="30"></textarea><br><br>
+
+Course:
+<select>
+<option>--Select--</option>
+<option>B.A</option>
+<option>B.Com</option>
+<option>BSc</option>
+</select>
+<br><br>
+
+Gender:
+<input type="radio" name="g"> Male
+<input type="radio" name="g"> Female
+<br><br>
+
+Subjects:
+<input type="checkbox"> HTML
+<input type="checkbox"> CSS
+<input type="checkbox"> JavaScript
+<br><br>
+
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
